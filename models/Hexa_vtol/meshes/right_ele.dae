@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.91.0 commit date:2020-11-25, commit time:08:34, hash:0f45cab862b8</authoring_tool>
+    </contributor>
+    <created>2020-12-08T19:24:11</created>
+    <modified>2020-12-08T19:24:11</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="right_ele_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images/>
+  <library_materials>
+    <material id="right_ele_001-material" name="right_ele.001">
+      <instance_effect url="#right_ele_001-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="right_ele_001-mesh" name="right_ele.001">
+      <mesh>
+        <source id="right_ele_001-mesh-positions">
+          <float_array id="right_ele_001-mesh-positions-array" count="51">0.8524996 -0.12 0 0.8658491 -0.12 -0.001704335 0.8695851 -0.12 0.002135455 0.8800583 -0.65 0 0.8839158 -0.12 -0.003457546 0.8920247 -0.65 -0.001487851 0.8953834 -0.65 0.001878678 0.8955686 -0.12 0.004692375 0.9118046 -0.65 -0.003480434 0.91529 -0.12 -0.006395041 0.9205901 -0.65 0.004304945 0.9323487 -0.12 0.007694721 0.9327488 -0.65 -0.005306899 0.95 -0.65 -0.006575465 0.95 -0.65 0.006576538 0.95 -0.12 -0.008838295 0.95 -0.12 0.008849203</float_array>
+          <technique_common>
+            <accessor source="#right_ele_001-mesh-positions-array" count="17" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="right_ele_001-mesh-normals">
+          <float_array id="right_ele_001-mesh-normals-array" count="69">-0.09658384 -0.005176663 -0.9953114 -0.1233784 -0.006498754 -0.9923385 -0.1266372 -0.006584823 -0.9919273 -0.1002295 -0.005231142 -0.9949507 -0.0932188 -0.004862129 -0.9956339 -0.08687615 -0.004907071 -0.9962071 -0.07021743 -0.004360973 -0.9975222 -0.07333725 -0.004257917 -0.9972981 -0.06526523 -0.004278838 0.9978588 -0.07700973 -0.004668176 0.9970194 -0.1216818 -0.006403803 0.9925485 -0.1240255 -0.006448924 0.9922581 -0.08135902 -0.00456953 0.9966744 -0.09581029 -0.005250811 0.9953858 -0.09793061 -0.005248963 0.9951794 0 1 0 0 1 1.60612e-6 0 1 -6.13331e-6 1 0 0 1 0 0 0 -1 2.05666e-5 0 -1 0 0 -1 1.08608e-5</float_array>
+          <technique_common>
+            <accessor source="#right_ele_001-mesh-normals-array" count="23" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="right_ele_001-mesh-vertices">
+          <input semantic="POSITION" source="#right_ele_001-mesh-positions"/>
+        </vertices>
+        <triangles material="right_ele_001-material" count="30">
+          <input semantic="VERTEX" source="#right_ele_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#right_ele_001-mesh-normals" offset="1"/>
+          <p>4 0 5 0 1 0 1 1 5 1 3 1 1 2 3 2 0 2 5 3 4 3 8 3 8 4 4 4 9 4 8 5 9 5 12 5 12 6 9 6 15 6 12 7 15 7 13 7 16 8 11 8 14 8 11 9 10 9 14 9 6 10 2 10 3 10 2 11 0 11 3 11 7 12 10 12 11 12 6 13 10 13 7 13 2 14 6 14 7 14 16 15 15 15 11 15 11 15 15 15 9 15 11 15 9 15 7 15 7 16 9 16 4 16 7 15 4 15 2 15 2 17 4 17 1 17 2 15 1 15 0 15 14 18 13 18 16 18 16 19 13 19 15 19 3 20 5 20 6 20 6 21 5 21 10 21 10 22 5 22 8 22 10 21 8 21 14 21 14 21 8 21 12 21 14 21 12 21 13 21</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="node0" name="node0" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#right_ele_001-mesh" name="node0">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="right_ele_001-material" target="#right_ele_001-material"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
